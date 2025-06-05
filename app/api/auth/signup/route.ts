@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { signupSchema } from '@/zod';
+import { signupSchema } from '@/zodSchema';
 import { PrismaClient } from '@/app/generated/prisma';
 import { withAccelerate } from '@prisma/extension-accelerate';
 import { sign } from 'jsonwebtoken';

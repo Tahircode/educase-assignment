@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { signinSchema } from '@/zod';
+import { signinSchema } from '@/zodSchema';
 import { sign } from 'jsonwebtoken';
 import { withAccelerate } from '@prisma/extension-accelerate';
 import client from '@/db'
