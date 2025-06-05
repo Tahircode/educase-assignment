@@ -7,9 +7,9 @@ exports.signupSchema = zod_1.z.object({
     phone: zod_1.z.string().min(10).max(15),
     email: zod_1.z.string().email(),
     password: zod_1.z.string().min(6),
-    companay: zod_1.z.string().min(2)
+    company: zod_1.z.string().min(2),
 });
 exports.signinSchema = zod_1.z.object({
     email: zod_1.z.string().email(),
-    password: zod_1.z.string().min(6)
+    password: zod_1.z.string().min(6),
 });
